@@ -10,4 +10,6 @@ myFunction([{a:1,b:7},{a:2,b:1}])  | Expected [{a:2,b:1},{a:1,b:7}]
 
 */
 
-const sortObjectArray = (arr) => arr.sort()
+const sortObjectArray = (arr) => {
+  arr.sort((x, y) => x.b - y.b);
+};
