@@ -13,4 +13,4 @@ myFunction({x:'a',b:'b',z:undefined},'z') | Expected false
 
 */
 
-const objectTruthy = () =>
+const objectTruthy = (a, b) => Boolean(a[b]);
