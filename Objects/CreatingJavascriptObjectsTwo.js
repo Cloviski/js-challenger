@@ -10,4 +10,8 @@ myFunction('z','x') | Expected {z:'x'}
 myFunction('b','w') | Expected {b:'w'}
 */
 
-const createTwoObjects = (a, b) => { [a]: b };
+function createTwoObjects() {
+    return { [a]: b };
+}
+
+// using arrow function gets an error
